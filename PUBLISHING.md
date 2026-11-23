@@ -19,11 +19,11 @@ yours (they are tied to your identity); everything else is prepared here.
 3. Create a publisher at
    https://marketplace.visualstudio.com/manage/publishers
    The publisher ID must equal the `publisher` field in `package.json`
-   (currently `AdityaKulkarni`); either take that ID or change the field.
+   (currently `aditya2375`); either take that ID or change the field.
 4. Then, in this folder:
 
    ```bash
-   npx vsce login AdityaKulkarni   # paste the PAT when asked
+   npx vsce login aditya2375   # paste the PAT when asked
    npm run package                  # rebuilds truecase-1.0.0.vsix
    npx vsce publish                 # or: npx vsce publish -p <PAT>
    ```
@@ -41,7 +41,7 @@ yours (they are tied to your identity); everything else is prepared here.
    npx ovsx publish truecase-1.0.0.vsix -p <token>
    ```
 
-The namespace `AdityaKulkarni` on Open VSX is claimed on first publish.
+The namespace `aditya2375` on Open VSX is claimed on first publish.
 
 ## Notes
 
