@@ -1,0 +1,106 @@
+{
+  "name": "truecase",
+  "displayName": "TrueCase",
+  "description": "Fixes the casing of your code as you type. Keywords, standard library names and your own identifiers snap to their correct case the moment you finish a word. No suggestions to accept, no Tab to press.",
+  "version": "1.0.0",
+  "publisher": "aditya-kulkarni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aditya2375/truecase.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Education"
+  ],
+  "keywords": [
+    "case",
+    "autocorrect",
+    "typing",
+    "java",
+    "c++",
+    "python",
+    "capitalization"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "truecase.toggle",
+        "title": "TrueCase: Toggle On/Off"
+      },
+      {
+        "command": "truecase.fixDocument",
+        "title": "TrueCase: Fix Casing in This File"
+      }
+    ],
+    "configuration": {
+      "title": "TrueCase",
+      "properties": {
+        "truecase.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Turn TrueCase on or off."
+        },
+        "truecase.languages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": [
+            "java", "c", "cpp", "javascript", "typescript",
+            "javascriptreact", "typescriptreact", "python", "csharp",
+            "go", "rust", "kotlin", "swift", "php", "ruby", "sql",
+            "lua", "r", "shellscript"
+          ],
+          "description": "VS Code language IDs TrueCase works in."
+        },
+        "truecase.fixKeywords": {
+          "type": "boolean",
+          "default": true,
+          "description": "Correct keywords typed in the wrong case (PUBLIC -> public, true -> TRUE in SQL)."
+        },
+        "truecase.fixLibrary": {
+          "type": "boolean",
+          "default": true,
+          "description": "Correct common standard library names (system -> System in Java, json -> JSON in JavaScript)."
+        },
+        "truecase.fixDocumentIdentifiers": {
+          "type": "boolean",
+          "default": true,
+          "description": "Correct identifiers to match the casing already used elsewhere in the same file (myclass -> MyClass after you declared MyClass)."
+        },
+        "truecase.extraSymbols": {
+          "type": "object",
+          "default": {},
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "description": "Your own canonical names per language, corrected the same way. Example: { \"java\": [\"MyApiClient\"], \"go\": [\"Cfg\"]"
+        },
+        "truecase.maxFileSizeKB": {
+          "type": "number",
+          "default": 512,
+          "description": "Files larger than this are left alone."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node test/run-tests.js",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.24.0",
+    "typescript": "^5.4.0"
+  }
+}

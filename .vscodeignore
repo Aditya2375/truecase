@@ -1,0 +1,10 @@
+.vscode/**
+.vscode-test/**
+out/**/*.map
+src/**
+test/**
+demo/make-gif.py
+node_modules/**
+tsconfig.json
+.gitignore
+demo/snapshots.js
