@@ -3,7 +3,7 @@
   "displayName": "TrueCase",
   "description": "Fixes the casing of your code as you type. Keywords, standard library names and your own identifiers snap to their correct case the moment you finish a word. No suggestions to accept, no Tab to press.",
   "version": "1.0.0",
-  "publisher": "aditya-kulkarni",
+  "publisher": "AdityaKulkarni",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -51,12 +51,29 @@
         },
         "truecase.languages": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "default": [
-            "java", "c", "cpp", "javascript", "typescript",
-            "javascriptreact", "typescriptreact", "python", "csharp",
-            "go", "rust", "kotlin", "swift", "php", "ruby", "sql",
-            "lua", "r", "shellscript"
+            "java",
+            "c",
+            "cpp",
+            "javascript",
+            "typescript",
+            "javascriptreact",
+            "typescriptreact",
+            "python",
+            "csharp",
+            "go",
+            "rust",
+            "kotlin",
+            "swift",
+            "php",
+            "ruby",
+            "sql",
+            "lua",
+            "r",
+            "shellscript"
           ],
           "description": "VS Code language IDs TrueCase works in."
         },
@@ -80,7 +97,9 @@
           "default": {},
           "additionalProperties": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": {
+              "type": "string"
+            }
           },
           "description": "Your own canonical names per language, corrected the same way. Example: { \"java\": [\"MyApiClient\"], \"go\": [\"Cfg\"]"
         },
