@@ -2,7 +2,7 @@
   "name": "truecase",
   "displayName": "TrueCase",
   "description": "Fixes the casing of your code as you type. Keywords, standard library names and your own identifiers snap to their correct case the moment you finish a word. No suggestions to accept, no Tab to press.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "AdityaaKulkarni",
   "license": "MIT",
   "repository": {
@@ -121,5 +121,6 @@
     "@types/vscode": "^1.85.0",
     "@vscode/vsce": "^2.24.0",
     "typescript": "^5.4.0"
-  }
+  },
+  "icon": "images/icon.png"
 }

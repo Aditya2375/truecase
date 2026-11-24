@@ -5,7 +5,7 @@ yours (they are tied to your identity); everything else is prepared here.
 
 ## What is already done
 
-- The extension is packaged as `truecase-1.0.0.vsix` in this repo's release
+- The extension is packaged as `truecase-1.0.1.vsix` in this repo's release
   artifacts (rebuild any time with `npm run package`).
 - `package.json` carries the metadata both marketplaces read.
 
@@ -24,7 +24,7 @@ yours (they are tied to your identity); everything else is prepared here.
 
    ```bash
    npx vsce login AdityaaKulkarni   # paste the PAT when asked
-   npm run package                  # rebuilds truecase-1.0.0.vsix
+   npm run package                  # rebuilds truecase-1.0.1.vsix
    npx vsce publish                 # or: npx vsce publish -p <PAT>
    ```
 
@@ -38,7 +38,7 @@ yours (they are tied to your identity); everything else is prepared here.
 3. Then:
 
    ```bash
-   npx ovsx publish truecase-1.0.0.vsix -p <token>
+   npx ovsx publish truecase-1.0.1.vsix -p <token>
    ```
 
 The namespace `AdityaaKulkarni` on Open VSX is claimed on first publish.

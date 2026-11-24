@@ -1,3 +1,5 @@
+<p align="center"><img src="images/icon.png" width="96" alt="TrueCase"></p>
+
 # TrueCase
 
 Type your code in whatever case your hands land in. TrueCase snaps each

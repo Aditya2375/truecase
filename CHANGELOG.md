@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- New icon.
+
 ## 1.0.0
 
 - Auto-corrects keyword, standard-library and document-identifier casing as
