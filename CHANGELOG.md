@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- New classic icon: ivory and gold serif "Aa" on ink navy.
+
 ## 1.0.1
 
 - New icon.

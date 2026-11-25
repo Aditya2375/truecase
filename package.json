@@ -2,7 +2,7 @@
   "name": "truecase",
   "displayName": "TrueCase",
   "description": "Fixes the casing of your code as you type. Keywords, standard library names and your own identifiers snap to their correct case the moment you finish a word. No suggestions to accept, no Tab to press.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "AdityaaKulkarni",
   "license": "MIT",
   "repository": {
